@@ -1,0 +1,61 @@
+.selected {
+    background: rgb(207, 246, 124);
+}
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu main main main right right';
+    gap: 1px;
+    background-color: #6a6a6a;
+    padding: 1px;
+}
+
+.gridContainer>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+
+
+tt table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tt table,
+td,
+th {
+    border: 2px solid #000000;
+    text-align: left;
+    padding: 10px;
+}
+
+tt tr:nth-child(even) {
+    background-color: #373737;
+}
